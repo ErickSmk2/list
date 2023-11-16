@@ -16,8 +16,9 @@ function Formulario(props){
         const tareaNueva = {
             id: uuidv4(),
             texto: input,
-            completada: false
-        }
+            completada: false, 
+        };
+        setInput('');
 
         props.onSubmit(tareaNueva);
     }
@@ -29,6 +30,7 @@ function Formulario(props){
             placeholder="Escribe una tarea"
             name="texto"
             onChange={manejarCambio}
+            value={input}
             />
             <button className="tarea-boton">
                 Agregar tarea
