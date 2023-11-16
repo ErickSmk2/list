@@ -1,0 +1,44 @@
+/* Estilos base */
+
+.tarea-formulario{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.tarea-input{
+    margin-top: 10px;
+    width: 100%; /* Cambiado el ancho a 100% para ser adaptable */
+    font-size: 18px;
+    background-color: #ffff;
+    padding: 14px 32px 14px 6px;
+    border: 2px solid #00471b; /* Corregido el borde */
+    border-radius: 2px; /* Corregido el borde */
+    outline: none;
+    box-sizing: border-box; /* Asegura que el tamaño incluya el borde y el relleno */
+}
+
+.tarea-boton{
+    padding: 16px;
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    background-color: #00471b;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+/* Estilos para diseño responsive */
+@media screen and (max-width: 768px) {
+    .tarea-formulario {
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+        align-items: stretch; /* Ajusta la alineación de los elementos */
+    }
+
+    .tarea-input, .tarea-boton {
+        width: 100%; /* Hace que los elementos ocupen todo el ancho disponible */
+        margin-bottom: 10px; /* Agrega espacio entre los elementos */
+    }
+}
